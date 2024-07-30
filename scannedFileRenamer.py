@@ -21,3 +21,5 @@ if __name__ == "__main__":
     directory = os.path.dirname(permit)
     print(directory)
     extract_permit_number(permit)
+
+# python scannedFileRenamer.py <pdf file here>
