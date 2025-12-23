@@ -36,7 +36,7 @@ class DirectoryWorker(QThread):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("ScannedFileRenamer")
+        self.setWindowTitle("PermitFlow Automator")
         self.resize(700, 450)
 
         central = QWidget()

@@ -63,6 +63,7 @@ def _overlay_address(writer, page, address, no_address_needed):
 
 
 def rename_pdf(path):
+    folder = os.path.dirname(path) or "."
     content = []
     for layout in extract_pages(path):
         content.extend(str(e) for e in layout)
@@ -72,8 +73,9 @@ def rename_pdf(path):
         raise RuntimeError("Permit identifier not found")
 
     new_name = "_".join(matches) + ".pdf"
-    os.rename(path, new_name)
-    return new_name
+    new_path = os.path.join(folder, new_name)
+    os.rename(path, new_path)
+    return new_path
 
 
 def scan_directory(folder, address_callback=None):
