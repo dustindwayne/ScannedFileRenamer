@@ -1,6 +1,6 @@
 # PermitFlow Automator
 
-PermitFlow Automator (hosted in this ScannedFileRenamer repository) is a local automation tool designed to eliminate manual file renaming and data extraction during permit-related data entry workflows.
+PermitFlow Automator is a local automation tool designed to eliminate manual file renaming and data extraction during permit-related data entry workflows.
 
 It continuously watches a scan directory, extracts permit metadata directly from newly scanned PDFs, verifies addresses when required, writes assigned address information back into the PDF, renames the file according to official permit conventions, and logs extracted data for reference.
 
